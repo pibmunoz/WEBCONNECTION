@@ -1,17 +1,17 @@
+import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 
 export const dataContext = createContext();
 
-// eslint-disable-next-line react/prop-types
 const DataProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [cart, setCart] = useState([]);
 
-  //   useEffect(() => {
-  //     axios("data.json").then((res) => setData(res.data));
-  //   }, []);
-
-  //   const [db, setdb] = useState([]);
+  // useEffect(() => {
+  //   axios("https://dummyjson.com/products").then((res) =>
+  //     setData(res.products)
+  //   );
+  // }, []);
 
   useEffect(() => {
     const getdata = () => {
