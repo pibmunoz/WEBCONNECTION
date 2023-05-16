@@ -1,5 +1,5 @@
 import Banner from "../Banner/Banner";
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../Navbar/NavBar";
 import Products from "../Products/Products";
 import "../Products/Products.css";
 

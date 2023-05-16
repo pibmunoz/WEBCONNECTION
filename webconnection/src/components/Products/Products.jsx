@@ -8,7 +8,7 @@ const Products = () => {
     return (
       <div className="grid-item" key={product.id}>
         <img src={product.thumbnail} alt="img-product-card" width="100%" />
-        <h3>{product.name}</h3>
+        <h3>{product.title}</h3>
         <h4>${product.price}</h4>
         <button className="cardButton" onClick={() => buyProducts(product)}>
           Agregar al 🛒{" "}
