@@ -16,10 +16,10 @@ const CartElements = () => {
   return cart.map((product) => {
     return (
       <div className="cartContent" key={product.id}>
-        <img src={product.img} alt="product-card" />
-        <h3 className="name">{product.name}</h3>
+        <img src={product.thumbnail} alt="product-card" />
+        <h3 className="name">{product.title}</h3>
         <CartItemCounter product={product} />
-        <h4 className="price">${product.price * product.quanty}</h4>
+        <h4 className="price">${product.price * product.stock}</h4>
         <h3
           className="cart-delete-button"
           onClick={() => deleteProduct(product.id)}

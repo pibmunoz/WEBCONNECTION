@@ -11,7 +11,7 @@ const CartItemCounter = ({ product }) => {
       setCart(
         cart.map((item) =>
           item.id === product.id
-            ? { ...product, quanty: productrepeat.quanty - 1 }
+            ? { ...product, quanty: productrepeat.stock - 1 }
             : item
         )
       );
